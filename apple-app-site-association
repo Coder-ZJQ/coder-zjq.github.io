@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "AW636Y9MQG.hz.aheading.mobile.inewsread.suqianribao",
+                "paths": [ "/app/suxinwen/*", "/qq_conn/1101135903" ]
+            },
+            {
+                "appID": "639EZFKKB7.cn.com.aiqd.wireless",
+                "paths": [ "/app/iqingdao/*", "/qq_conn/100920729" ]
+            }
+        ]
+    }
+}
