@@ -340,34 +340,14 @@
           <p>Cydia 在安装 Frida 16.0.8 版本时会有如下报错：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dpkg-deb --control subprocess returned error exit status 2
 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)</code></pre>
-
-<p>解决：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 1. 安装旧版本
-# 在 GitHub release 页下载旧版本，比如 frida_16.0.6_iphoneos-arm.deb
-# 利用 scp 或者 iFunBox 等工具传输到手机
-# 在手机对应目录下执行安装指令
-dpkg -i frida_16.0.8_iphoneos-arm.deb</code></pre>
-
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 2. 在电脑上重新打包再传输到手机上安装
-#  在电脑上
-FRIDA_VERSION&#x3D;&quot;16.0.8&quot;
-wget https:&#x2F;&#x2F;github.com&#x2F;frida&#x2F;frida&#x2F;releases&#x2F;download&#x2F;&quot;$&#123;FRIDA_VERSION&#125;&quot;&#x2F;frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb
-
-mkdir frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm
-cd frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm
-ar -x ..&#x2F;frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb
-zstd -d *.zst
-xz *.tar
-ar r frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm-repacked.deb debian-binary control.tar.xz data.tar.xz
-
-# 利用 scp 或者 iFunBox 等工具传输到手机
-
-# 在手机对应目录下执行安装指令
-FRIDA_VERSION&#x3D;&quot;16.0.8&quot;
-dpkg -i  &quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm-repacked.deb</code></pre>
-
-<p>参考链接：<a target="_blank" rel="noopener" href="https://github.com/frida/frida/issues/2355">Error when installing Frida 16.0.8 on Cydia · Issue #2355 · frida/frida (github.com)</a></p>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/02/cydia-install-frida-16-0-8-error/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

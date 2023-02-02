@@ -185,7 +185,7 @@ layout.itemsDirection &#x3D; JQCollectionViewItemsDirectionLTR;</code></pre>
 @end</code></pre>
 
 <p><em>(剩下的使用与 <code>NS&amp;UICollectionViewFlowLayout</code> 一致，也可打开<a href="./Examples">示例项目</a>查看更多细节)</em></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#x6a;&#113;&#x5f;&#x6a;&#111;&#x6b;&#x65;&#x72;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;">&#122;&#x6a;&#113;&#x5f;&#x6a;&#111;&#x6b;&#x65;&#x72;&#64;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;</a></p>
+<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#106;&#x71;&#95;&#106;&#x6f;&#x6b;&#101;&#x72;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#109;">&#122;&#106;&#x71;&#95;&#106;&#x6f;&#x6b;&#101;&#x72;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#109;</a></p>
 <h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>JQCollectionViewAlignLayout 遵循 MIT 协议，可以查看 LICENSE 文件获取更多信息。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -816,6 +816,8 @@ choose(UIViewController)</code></pre>
     <content><![CDATA[<p>Cydia 在安装 Frida 16.0.8 版本时会有如下报错：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dpkg-deb --control subprocess returned error exit status 2
 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)</code></pre>
+
+<span id="more"></span>
 
 <p>解决：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 1. 安装旧版本

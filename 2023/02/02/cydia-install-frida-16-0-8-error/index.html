@@ -22,12 +22,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"jqz3.tech","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"utterances","storage":true,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":true,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Cydia 在安装 Frida 16.0.8 版本时会有如下报错： dpkg-deb --control subprocess returned error exit status 2 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)  解决： # 1. 安装旧版本 # 在 GitH">
+    <meta name="description" content="Cydia 在安装 Frida 16.0.8 版本时会有如下报错： dpkg-deb --control subprocess returned error exit status 2 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cydia 安装 Frida 16.0.8 版本时报错">
 <meta property="og:url" content="https://jqz3.tech/2023/02/02/cydia-install-frida-16-0-8-error/index.html">
 <meta property="og:site_name" content="JQ♡TECH">
-<meta property="og:description" content="Cydia 在安装 Frida 16.0.8 版本时会有如下报错： dpkg-deb --control subprocess returned error exit status 2 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)  解决： # 1. 安装旧版本 # 在 GitH">
+<meta property="og:description" content="Cydia 在安装 Frida 16.0.8 版本时会有如下报错： dpkg-deb --control subprocess returned error exit status 2 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-02T03:16:56.000Z">
 <meta property="article:modified_time" content="2023-02-02T03:16:56.000Z">
@@ -344,6 +344,8 @@
         <p>Cydia 在安装 Frida 16.0.8 版本时会有如下报错：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dpkg-deb --control subprocess returned error exit status 2
 Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)</code></pre>
+
+<span id="more"></span>
 
 <p>解决：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 1. 安装旧版本
