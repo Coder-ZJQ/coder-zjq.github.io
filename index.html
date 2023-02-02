@@ -90,7 +90,7 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">14</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">45</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">46</span></a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">29</span></a></li>
         <li class="menu-item menu-item-commonweal"><a href="/404.html" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
@@ -163,7 +163,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">46</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -251,6 +251,139 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://jqz3.tech/2023/02/02/cydia-install-frida-16-0-8-error/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="ZJQ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JQ♡TECH">
+      <meta itemprop="description" content="Stay Hungry, Stay Foolish.">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | JQ♡TECH">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/02/cydia-install-frida-16-0-8-error/" class="post-title-link" itemprop="url">Cydia 安装 Frida 16.0.8 版本时报错</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-02 11:16:56" itemprop="dateCreated datePublished" datetime="2023-02-02T11:16:56+08:00">2023-02-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" itemprop="url" rel="index"><span itemprop="name">问题解决</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%80%86%E5%90%91%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">逆向安全</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/2023/02/02/cydia-install-frida-16-0-8-error/" class="post-meta-item leancloud_visitors" data-flag-title="Cydia 安装 Frida 16.0.8 版本时报错" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Cydia 在安装 Frida 16.0.8 版本时会有如下报错：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">dpkg-deb --control subprocess returned error exit status 2
+Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (1)</code></pre>
+
+<p>解决：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 1. 安装旧版本
+# 在 GitHub release 页下载旧版本，比如 frida_16.0.6_iphoneos-arm.deb
+# 利用 scp 或者 iFunBox 等工具传输到手机
+# 在手机对应目录下执行安装指令
+dpkg -i frida_16.0.8_iphoneos-arm.deb</code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 2. 在电脑上重新打包再传输到手机上安装
+#  在电脑上
+FRIDA_VERSION&#x3D;&quot;16.0.8&quot;
+wget https:&#x2F;&#x2F;github.com&#x2F;frida&#x2F;frida&#x2F;releases&#x2F;download&#x2F;&quot;$&#123;FRIDA_VERSION&#125;&quot;&#x2F;frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb
+
+mkdir frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm
+cd frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm
+ar -x ..&#x2F;frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb
+zstd -d *.zst
+xz *.tar
+ar r frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm-repacked.deb debian-binary control.tar.xz data.tar.xz
+
+# 利用 scp 或者 iFunBox 等工具传输到手机
+
+# 在手机对应目录下执行安装指令
+FRIDA_VERSION&#x3D;&quot;16.0.8&quot;
+dpkg -i  &quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm-repacked.deb</code></pre>
+
+<p>参考链接：<a target="_blank" rel="noopener" href="https://github.com/frida/frida/issues/2355">Error when installing Frida 16.0.8 on Cydia · Issue #2355 · frida/frida (github.com)</a></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1338,115 +1471,6 @@ brew install 插件名</code></pre>
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://jqz3.tech/2021/07/14/ipatool/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.png">
-      <meta itemprop="name" content="ZJQ">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JQ♡TECH">
-      <meta itemprop="description" content="Stay Hungry, Stay Foolish.">
-    </span>
-    
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | JQ♡TECH">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/14/ipatool/" class="post-title-link" itemprop="url">利用 ipatool 下载 ipa 包</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-07-14 14:37:04" itemprop="dateCreated datePublished" datetime="2021-07-14T14:37:04+08:00">2021-07-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">工具使用</span></a>
-        </span>
-    </span>
-
-  
-    <span id="/2021/07/14/ipatool/" class="post-meta-item leancloud_visitors" data-flag-title="利用 ipatool 下载 ipa 包" title="阅读次数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
-    </span>
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>261</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="ipatool"><a href="#ipatool" class="headerlink" title="ipatool"></a>ipatool</h3><p><a target="_blank" rel="noopener" href="https://github.com/majd/ipatool">ipatool</a> 是一个命令行工具，可以让你搜索下载 <a target="_blank" rel="noopener" href="https://apps.apple.com/">App Store</a> 上的 iOS 应用（下载需输入 Apple ID 及密码，且该 Apple ID 下载过该应用）。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ brew tap majd&#x2F;repo
-$ brew install ipatool</code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/14/ipatool/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1460,7 +1484,7 @@ $ brew install ipatool</code></pre>
 
 <div class="copyright">
   &copy; 2015 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -1471,13 +1495,13 @@ $ brew install ipatool</code></pre>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">123k</span>
+    <span title="站点总字数">124k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:52</span>
+    <span title="站点阅读时长">1:53</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
