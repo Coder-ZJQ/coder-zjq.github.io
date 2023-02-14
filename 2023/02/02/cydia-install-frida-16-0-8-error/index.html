@@ -139,7 +139,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -152,6 +152,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">解决：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -347,15 +348,14 @@ Sub-process &#x2F;usr&#x2F;libexec&#x2F;cydia&#x2F;cydo returned an error code (
 
 <span id="more"></span>
 
-<p>解决：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 1. 安装旧版本
-# 在 GitHub release 页下载旧版本，比如 frida_16.0.6_iphoneos-arm.deb
+<h3 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h3><p>第一种：安装旧版本</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 在 GitHub release 页下载旧版本，比如 frida_16.0.6_iphoneos-arm.deb
 # 利用 scp 或者 iFunBox 等工具传输到手机
 # 在手机对应目录下执行安装指令
 dpkg -i frida_16.0.8_iphoneos-arm.deb</code></pre>
 
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 2. 在电脑上重新打包再传输到手机上安装
-#  在电脑上
+<p>第二种：在电脑上重新打包再传输到手机上安装</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">#  在电脑上
 FRIDA_VERSION&#x3D;&quot;16.0.8&quot;
 wget https:&#x2F;&#x2F;github.com&#x2F;frida&#x2F;frida&#x2F;releases&#x2F;download&#x2F;&quot;$&#123;FRIDA_VERSION&#125;&quot;&#x2F;frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb frida_&quot;$&#123;FRIDA_VERSION&#125;&quot;_iphoneos-arm.deb
 
