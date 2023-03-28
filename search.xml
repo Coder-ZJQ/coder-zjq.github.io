@@ -185,7 +185,7 @@ layout.itemsDirection &#x3D; JQCollectionViewItemsDirectionLTR;</code></pre>
 @end</code></pre>
 
 <p><em>(剩下的使用与 <code>NS&amp;UICollectionViewFlowLayout</code> 一致，也可打开<a href="./Examples">示例项目</a>查看更多细节)</em></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#x7a;&#106;&#113;&#95;&#106;&#x6f;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#x2e;&#99;&#111;&#109;">&#x7a;&#106;&#113;&#95;&#106;&#x6f;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#x2e;&#99;&#111;&#109;</a></p>
+<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#x6a;&#x71;&#x5f;&#106;&#111;&#107;&#101;&#114;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;">&#122;&#x6a;&#x71;&#x5f;&#106;&#111;&#107;&#101;&#114;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;</a></p>
 <h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>JQCollectionViewAlignLayout 遵循 MIT 协议，可以查看 LICENSE 文件获取更多信息。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -1515,9 +1515,9 @@ curl -L https:&#x2F;&#x2F;api.github.com&#x2F;meta | jq -r &#39;.ssh_keys | .[]&
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr&#x2F;C56SJMy&#x2F;BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9&#x2F;hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS&#x2F;YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4&#x2F;WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1&#x2F;wsjk&#x3D;</code></pre>
 
 <h4 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h4><p>如果你完成以上操作可以执行以下指令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -o VisualHostKey&#x3D;yes git@github.com</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -T git@github.com -o VisualHostKey&#x3D;yes</code></pre>
 
-<p>或者 SSH 连接的时候查看显示的 fingerprint 是否是以下值：</p>
+<p>查看显示的 fingerprint 是否是以下值：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s</code></pre>
 
 <p>如果是则表示你更新成功，使用的是新的 RSA SSH key。</p>

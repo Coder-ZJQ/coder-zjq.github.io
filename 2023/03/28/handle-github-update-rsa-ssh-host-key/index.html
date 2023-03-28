@@ -320,7 +320,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.2k</span>
+      <span>2.1k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -367,9 +367,9 @@ curl -L https:&#x2F;&#x2F;api.github.com&#x2F;meta | jq -r &#39;.ssh_keys | .[]&
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr&#x2F;C56SJMy&#x2F;BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9&#x2F;hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS&#x2F;YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4&#x2F;WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1&#x2F;wsjk&#x3D;</code></pre>
 
 <h4 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h4><p>如果你完成以上操作可以执行以下指令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -o VisualHostKey&#x3D;yes git@github.com</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -T git@github.com -o VisualHostKey&#x3D;yes</code></pre>
 
-<p>或者 SSH 连接的时候查看显示的 fingerprint 是否是以下值：</p>
+<p>查看显示的 fingerprint 是否是以下值：</p>
 <pre class="line-numbers language-text" data-language="text"><code class="language-text">SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s</code></pre>
 
 <p>如果是则表示你更新成功，使用的是新的 RSA SSH key。</p>
