@@ -185,7 +185,7 @@ layout.itemsDirection &#x3D; JQCollectionViewItemsDirectionLTR;</code></pre>
 @end</code></pre>
 
 <p><em>(剩下的使用与 <code>NS&amp;UICollectionViewFlowLayout</code> 一致，也可打开<a href="./Examples">示例项目</a>查看更多细节)</em></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#106;&#x71;&#x5f;&#106;&#111;&#x6b;&#x65;&#x72;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;">&#122;&#106;&#x71;&#x5f;&#106;&#111;&#x6b;&#x65;&#x72;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#x7a;&#106;&#113;&#95;&#106;&#x6f;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#x2e;&#99;&#111;&#109;">&#x7a;&#106;&#113;&#95;&#106;&#x6f;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#x2e;&#99;&#111;&#109;</a></p>
 <h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>JQCollectionViewAlignLayout 遵循 MIT 协议，可以查看 LICENSE 文件获取更多信息。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -1482,6 +1482,53 @@ HEAD is now at c2ae0fb Learn how to rollback the version.</code></pre></li>
       <tags>
         <tag>Git</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>处理 GitHub 更新 RSA SSH host key 导致的问题</title>
+    <url>/2023/03/28/handle-github-update-rsa-ssh-host-key/</url>
+    <content><![CDATA[<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>在 2023-03-23 GitHub 出于安全原因更新了他们的 RSA SSH host key，如果你使用的是 ECDSA 或者 Ed25519 keys 则不需要任何操作，如果你是通过 RSA key SSH 连接的 GitHub 则可能会显示类似以下信息：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s.
+Please contact your system administrator.
+Add correct host key in &#x2F;Users&#x2F;Joker&#x2F;.ssh&#x2F;known_hosts to get rid of this message.
+Offending RSA key in &#x2F;Users&#x2F;Joker&#x2F;.ssh&#x2F;known_hosts:1
+Host key for github.com has changed and you have requested strict checking.
+Host key verification failed.</code></pre>
+
+<span id="more"></span>
+
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><p>如果显示以上信息则需要更新 <code>~/.ssh/known_hosts</code> 中 <code>github.com</code> 旧的 RSA host key。</p>
+<p>可以通过执行以下命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 移除旧的 github.com RSA key
+ssh-keygen -R github.com
+# 通过 GitHub 接口更新 github.com RSA key
+curl -L https:&#x2F;&#x2F;api.github.com&#x2F;meta | jq -r &#39;.ssh_keys | .[]&#39; | sed -e &#39;s&#x2F;^&#x2F;github.com &#x2F;&#39; &gt;&gt; ~&#x2F;.ssh&#x2F;known_hosts</code></pre>
+
+<p>或者手动编辑 <code>~/.ssh/known_hosts</code> 中 <code>github.com</code> RSA key 为以下：</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr&#x2F;C56SJMy&#x2F;BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9&#x2F;hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS&#x2F;YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4&#x2F;WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1&#x2F;wsjk&#x3D;</code></pre>
+
+<h4 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h4><p>如果你完成以上操作可以执行以下指令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -o VisualHostKey&#x3D;yes git@github.com</code></pre>
+
+<p>或者 SSH 连接的时候查看显示的 fingerprint 是否是以下值：</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">SHA256:uNiVztksCsDhcc0u9e8BujQXVUpKZIDTMczCvj3tD2s</code></pre>
+
+<p>如果是则表示你更新成功，使用的是新的 RSA SSH key。</p>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><ul>
+<li><a href="https://stackoverflow.com/questions/75830783/warning-remote-host-identification-has-changed-did-github-change-their-rsa">ssh - “Warning: Remote Host Identification Has Changed” — Did GitHub change their RSA key? - Stack Overflow</a></li>
+<li><a href="https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key">We updated our RSA SSH host key | The GitHub Blog</a></li>
+</ul>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>问题解决</category>
+      </categories>
   </entry>
   <entry>
     <title>vscode 更改显示语言</title>
