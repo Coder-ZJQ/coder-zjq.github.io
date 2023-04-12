@@ -185,7 +185,7 @@ layout.itemsDirection &#x3D; JQCollectionViewItemsDirectionLTR;</code></pre>
 @end</code></pre>
 
 <p><em>(剩下的使用与 <code>NS&amp;UICollectionViewFlowLayout</code> 一致，也可打开<a href="./Examples">示例项目</a>查看更多细节)</em></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#x7a;&#106;&#x71;&#95;&#106;&#x6f;&#107;&#101;&#114;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;">&#x7a;&#106;&#x71;&#95;&#106;&#x6f;&#107;&#101;&#114;&#64;&#49;&#54;&#51;&#x2e;&#99;&#x6f;&#109;</a></p>
+<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#106;&#113;&#95;&#x6a;&#x6f;&#x6b;&#x65;&#x72;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#111;&#109;">&#122;&#106;&#113;&#95;&#x6a;&#x6f;&#x6b;&#x65;&#x72;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#111;&#109;</a></p>
 <h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>JQCollectionViewAlignLayout 遵循 MIT 协议，可以查看 LICENSE 文件获取更多信息。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -680,8 +680,8 @@ self.block();</code></pre>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
       <tags>
@@ -1636,8 +1636,8 @@ G--&gt;H
 </pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
       <tags>
@@ -2195,8 +2195,8 @@ E--&gt;ObjcAssociation
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
       <tags>
@@ -2375,8 +2375,8 @@ NSString *getMethods(Class cls) &#123;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
       </categories>
   </entry>
   <entry>
@@ -2537,8 +2537,8 @@ struct objc_super &#123;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
       <tags>
@@ -3646,8 +3646,8 @@ int main(int argc, const char * argv[]) &#123;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
   </entry>
@@ -4281,8 +4281,8 @@ static bool call_category_loads(void)
 </code></pre><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>编程相关</category>
-        <category>面试相关</category>
         <category>Objective-C</category>
+        <category>面试相关</category>
         <category>runtime</category>
       </categories>
   </entry>
