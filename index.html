@@ -449,8 +449,10 @@ Host key verification failed.</code></pre>
           <p>Mac 上 iPhone 备份的存储路径默认为： <code>/Library/Application Support/MobileSync/Backup</code>，所以可以通过软连接指向其它目录的方式来欺骗系统，将备份文件存储至移动硬盘等其他外部介质。具体操作如下：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 跳转到备份目录
 cd ~&#x2F;Library&#x2F;Application\ Support&#x2F;MobileSync&#x2F;
+
 # 移动备份文件至你想要保存的位置（这里我是移动到“Backup(iPhone)”移动硬盘下）
 mv Backup &#x2F;Volumes&#x2F;&#39;Backup(iPhone)&#39;
+
 # 生成移动位置软连接以替换原本的 Backup 目录
 ln -s &#x2F;Volumes&#x2F;&#39;Backup(iPhone)&#39;&#x2F;Backup&#x2F; ~&#x2F;Library&#x2F;Application\ Support&#x2F;MobileSync&#x2F;Backup</code></pre>
 
