@@ -185,7 +185,7 @@ layout.itemsDirection &#x3D; JQCollectionViewItemsDirectionLTR;</code></pre>
 @end</code></pre>
 
 <p><em>(剩下的使用与 <code>NS&amp;UICollectionViewFlowLayout</code> 一致，也可打开<a href="./Examples">示例项目</a>查看更多细节)</em></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#x7a;&#x6a;&#x71;&#95;&#x6a;&#111;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#46;&#x63;&#111;&#109;">&#x7a;&#x6a;&#x71;&#95;&#x6a;&#111;&#x6b;&#x65;&#114;&#64;&#49;&#x36;&#x33;&#46;&#x63;&#111;&#109;</a></p>
+<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p>coder-zjq, <a href="mailto:&#122;&#x6a;&#x71;&#95;&#106;&#x6f;&#107;&#x65;&#x72;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;">&#122;&#x6a;&#x71;&#95;&#106;&#x6f;&#107;&#x65;&#x72;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;</a></p>
 <h2 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h2><p>JQCollectionViewAlignLayout 遵循 MIT 协议，可以查看 LICENSE 文件获取更多信息。</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
       <categories>
@@ -4306,7 +4306,7 @@ static bool call_category_loads(void)
 <li><p>单独硬盘不分区的话需格式化为 APFS 制式。分区的话分区时需选择 APFS，分区大小根据自己实际情况调整，以下面为例：</p>
 </li>
 </ul>
-<img src="http://image.jqz3.tech/blog/20220624143311.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624143311.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 
 <ul>
 <li>由于需将系统装在移动硬盘上，也就是需从移动硬盘上启动系统，所以需允许从外部介质启动，具体操作可参考：<a href="https://support.apple.com/zh-cn/HT208198">https://support.apple.com/zh-cn/HT208198</a>，将“允许从外部介质或可移动介质启动”勾选；</li>
@@ -4317,35 +4317,35 @@ ipsw download macos -l
 # 根据第三列的 build id 下载 InstallAssistant.pkg
 ipsw download macos -b 22A5286j -V -a -y</code></pre>
 
-<img src="http://image.jqz3.tech/blog/20220624142830.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624142830.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 
-<img src="http://image.jqz3.tech/blog/20220624142723.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624142723.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 
-<img src="http://image.jqz3.tech/blog/20220624142635.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:50%;" />
+<img src="https://image.jqz3.tech/blog/20220624142635.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:50%;" />
 
 <h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><ul>
 <li>准备工作完成后，打开下载的 <code>InstallAssistant.pkg</code> 安装至本机，安装成功后应用文件夹会多出一个 <code>Install macOS Ventura beta</code> 应用：</li>
 </ul>
-<img src="http://image.jqz3.tech/blog/20220624143458.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:33%;" />
+<img src="https://image.jqz3.tech/blog/20220624143458.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:33%;" />
 
 <ul>
 <li>打开 <code>Install macOS Ventura beta</code> 应用按提示操作，安装系统时选择刚刚移动硬盘分配的分区（这里我给分区命名的是 <code>macos Ventura</code>）然后继续：</li>
 </ul>
-<img src="http://image.jqz3.tech/blog/20220624143606.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624143606.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 
 <ul>
 <li>等待系统安装（可以 <code>command + L</code> 打开日志窗口查看进度），一般需要二三十分钟，中间会重启几次：</li>
 </ul>
-<img src="http://image.jqz3.tech/blog/20220624143644.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624143644.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 
-<p><img src="http://image.jqz3.tech/blog/20220624144453.png?imageView2/0/q/75%7Cwatermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10"></p>
+<p><img src="https://image.jqz3.tech/blog/20220624144453.png?imageView2/0/q/75%7Cwatermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10"></p>
 <h3 id="切换"><a href="#切换" class="headerlink" title="切换"></a>切换</h3><ul>
 <li><p>安装成功后，下次想要切换系统可以连接硬盘开机时按住 option 键，然后选择对应系统启动盘启动；</p>
 </li>
 <li><p>或者在设置页面选择对应系统启动盘重启。</p>
 </li>
 </ul>
-<img src="http://image.jqz3.tech/blog/20220624154646.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
+<img src="https://image.jqz3.tech/blog/20220624154646.png?imageView2/0/q/75|watermark/2/text/aHR0cHM6Ly9qcXozLnRlY2g=/font/bWljcm9zb2Z0IHlhaGVp/fontsize/360/fill/I0ZGRkZGRg==/dissolve/100/gravity/SouthEast/dx/10/dy/10" style="zoom:40%;" />
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
   </entry>
   <entry>
